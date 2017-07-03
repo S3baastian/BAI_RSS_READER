@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ChannelsService } from "../../shared/channels.service";
 import { AuthService } from "../../shared/auth.service";
+import { Country } from "../categories/country/country";
 
 @Component({
   selector: 'page-home',
@@ -14,8 +15,6 @@ export class HomePage implements OnInit{
   private sportChannels = [];
   private businessChannels = [];
   private funChannels = [];
-
-  private userSelectedChannels = [];
 
   private finishedLoadingChanels: boolean = false;
 
@@ -38,10 +37,8 @@ export class HomePage implements OnInit{
   }
 
   filterUserSettings(categories) {
-    let userSelectedChannels = [];
-
     categories.map((cat) => {
-      let selected = cat.channels.filter( (channel) => channel.selected === true );
+      const selected = cat.channels.filter( (channel) => channel.selected === true );
       if(selected.length !== 0) {
         switch (cat.code) {
           case "country":
@@ -67,6 +64,8 @@ export class HomePage implements OnInit{
     this.finishedLoadingChanels = true;
   }
   goToCountryCard() {
-
+    this.navCtrl.push(Country, {
+      channels: this.countryChannels
+    });
   }
 }

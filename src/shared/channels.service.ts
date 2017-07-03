@@ -11,7 +11,6 @@ import * as xml2js from 'xml2js';
 export class ChannelsService {
   private apiHost: string = '../assets/channels.json';
   private channels;
-  private userSettings;
 
   constructor(private http: Http, private platform: Platform, private authService: AuthService) {
   }
@@ -21,20 +20,20 @@ export class ChannelsService {
       .subscribe((data) => this.channels = data.channels);
   }
 
-  getCountryWp(link) {
+  fetchNews(link) {
     return this.http.get(link)
       .map(res => {
         let news;
         xml2js.parseString( res.text(), function (err, result) {
           news = result.rss.channel[0].item;
         });
-        return news;
+        return news.slice(0,5);
       });
   }
 
   getChannelLink(cateogry, channel) {
-    let selectedCat = this.channels.find((e) => e.code === cateogry);
-    let selectedChannel = selectedCat.channels.find(e => e.code === channel);
+    const selectedCat = this.channels.find((e) => e.code === cateogry);
+    const selectedChannel = selectedCat.channels.find(e => e.code === channel);
     return selectedChannel.link;
   }
 

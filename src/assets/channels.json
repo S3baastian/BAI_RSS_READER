@@ -7,27 +7,27 @@
         {
           "code": "wp",
           "name": "Wirtualna Polska",
-          "link": "http://wiadomosci.wp.pl/kat,1342,ver,rss,rss.xml"
+          "link": "/wp/kat,1342,ver,rss,rss.xml"
         },
         {
           "code": "interia",
           "name": "Interia",
-          "link": "http://fakty.interia.pl/polska/feed"
+          "link": "/interia/polska/feed"
         },
         {
           "code": "tvn24",
           "name": "TVN 24",
-          "link": "http://www.tvn24.pl/wiadomosci-z-kraju,3.xml"
+          "link": "/tvn24/wiadomosci-z-kraju,3.xml"
         },
         {
           "code": "rmf",
           "name": "RMF FM",
-          "link": "http://www.rmf24.pl/fakty/polska/feed"
+          "link": "/rmf24/fakty/polska/feed"
         },
         {
           "code": "polsat",
           "name": "Polsat",
-          "link": "http://www.polsatnews.pl/rss/kraj.xml"
+          "link": "/polsat/kraj.xml"
         }
       ]
     },
@@ -43,22 +43,22 @@
         {
           "code": "interia",
           "name": "Interia",
-          "link": "http://fakty.interia.pl/swiat/feed"
+          "link": "/interia/swiat/feed"
         },
         {
           "code": "tvn24",
           "name": "TVN 24",
-          "link": "http://www.tvn24.pl/wiadomosci-ze-swiata,2.xml"
+          "link": "/tvn24/wiadomosci-ze-swiata,2.xml"
         },
         {
           "code": "rmf",
           "name": "RMF FM",
-          "link": "http://www.rmf24.pl/fakty/swiat/feed"
+          "link": "/rmf24/fakty/swiat/feed"
         },
         {
           "code": "polsat",
           "name": "Polsat",
-          "link": "http://www.polsatnews.pl/rss/swiat.xml"
+          "link": "/polsat/rss/swiat.xml"
         }
       ]
     },
@@ -84,12 +84,12 @@
         {
           "code": "rmf",
           "name": "RMF FM",
-          "link": "http://www.rmf24.pl/sport/feed"
+          "link": "/rmf24/sport/feed"
         },
         {
           "code": "polsat",
           "name": "Polsat",
-          "link": "http://www.polsatnews.pl/rss/sport.xml"
+          "link": "/polsat/rss/sport.xml"
         }
       ]
     },
@@ -110,17 +110,17 @@
         {
           "code": "tvn24",
           "name": "TVN 24",
-          "link": "http://www.tvn24.pl/biznes-gospodarka,6.xml"
+          "link": "/tvn24/biznes-gospodarka,6.xml"
         },
         {
           "code": "rmf",
           "name": "RMF FM",
-          "link": "http://www.rmf24.pl/ekonomia/feed"
+          "link": "/rmf24/ekonomia/feed"
         },
         {
           "code": "polsat",
           "name": "Polsat",
-          "link": "http://www.polsatnews.pl/rss/biznes.xml"
+          "link": "/polsat/rss/biznes.xml"
         }
       ]
     },
@@ -136,22 +136,22 @@
         {
           "code": "interia",
           "name": "Interia",
-          "link": "http://fakty.interia.pl/kultura/feed"
+          "link": "/interia/kultura/feed"
         },
         {
           "code": "tvn24",
           "name": "TVN 24",
-          "link": "http://www.tvn24.pl/kultura-styl,8.xml"
+          "link": "/tvn24/kultura-styl,8.xml"
         },
         {
           "code": "rmf",
           "name": "RMF FM",
-          "link": "http://www.rmf24.pl/rozrywka/szolbiznes/feed"
+          "link": "/rmf24/rozrywka/szolbiznes/feed"
         },
         {
           "code": "polsat",
           "name": "Polsat",
-          "link": "http://www.polsatnews.pl/rss/rozrywka.xml"
+          "link": "/polsat/rss/rozrywka.xml"
         }
       ]
     }

@@ -10,7 +10,14 @@
 </ion-header>
 
 <ion-content class="card-background-page" padding>
-  <div *ngIf="finishedLoadingChanels">lorem ipsum dolor es</div>
+  <div *ngIf="finishedLoadingChanels">
+    <ion-list>
+      <button (click)="goToCountryCard()" ion-item>
+        <ion-icon name="locate" item-start></ion-icon>
+        Country
+      </button>
+    </ion-list>
+  </div>
   <div *ngIf="!finishedLoadingChanels" class="spinner">
     <ion-row>
       <ion-col text-center>

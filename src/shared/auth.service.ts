@@ -38,8 +38,7 @@ export class AuthService {
     }
 
     isAuthenticated() {
-        var user = firebase.auth().currentUser;
-
+        const user = firebase.auth().currentUser;
         if (user) {
             this.fetchUserChannelsSettings().subscribe((data) => this.userSettings = data.channels);
             return true;
@@ -70,7 +69,7 @@ export class AuthService {
     }
 
     createDefaultSettingsForRegisteredUser() {
-        let body = JSON.stringify(this.userRegisterDefaultData);
+        const body = JSON.stringify(this.userRegisterDefaultData);
         const headers = new Headers({
             'Content-Type' : 'application/json'
         });
