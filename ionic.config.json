@@ -2,27 +2,5 @@
   "name": "rss-Reader",
   "app_id": "",
   "v2": true,
-  "typescript": true,
-  "proxies": [
-    {
-      "path": "/interia",
-      "proxyUrl": "http://fakty.interia.pl"
-    },
-    {
-      "path": "/rmf24",
-      "proxyUrl": "http://www.rmf24.pl"
-    },
-    {
-      "path": "/polsat",
-      "proxyUrl": "http://www.polsatnews.pl/rss"
-    },
-    {
-      "path": "/wp",
-      "proxyUrl": "http://wiadomosci.wp.pl"
-    },
-    {
-      "path": "/tvn24",
-      "proxyUrl": " http://www.tvn24.pl"
-    }
-  ]
+  "typescript": true
 }

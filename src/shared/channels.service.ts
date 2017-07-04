@@ -23,6 +23,7 @@ export class ChannelsService {
   fetchNews(link) {
     return this.http.get(link)
       .map(res => {
+
         let news;
         xml2js.parseString( res.text(), function (err, result) {
           news = result.rss.channel[0].item;

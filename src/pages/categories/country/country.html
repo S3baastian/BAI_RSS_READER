@@ -6,10 +6,17 @@
 
 
 <ion-content padding>
-  <ion-list>
+  <ion-list *ngIf="finishedLoadingNews">
     <ion-item *ngFor="let item of news">
       <h2>{{item.title[0]}}</h2>
       <div class="news-description" [innerHTML]="item.description[0]"></div>
     </ion-item>
   </ion-list>
+  <div *ngIf="!finishedLoadingNews" class="spinner">
+    <ion-row>
+      <ion-col text-center>
+        <ion-spinner text-center name="crescent"></ion-spinner>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>
