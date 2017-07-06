@@ -3,6 +3,10 @@ import { NavController } from 'ionic-angular';
 import { ChannelsService } from "../../shared/channels.service";
 import { AuthService } from "../../shared/auth.service";
 import { Country } from "../categories/country/country";
+import { World } from "../categories/world/world";
+import { Sport } from "../categories/sport/sport";
+import { Business } from "../categories/business/business";
+import { Fun } from "../categories/fun/fun";
 
 @Component({
   selector: 'page-home',
@@ -63,9 +67,39 @@ export class HomePage implements OnInit{
     });
     this.finishedLoadingChanels = true;
   }
+
+  /*
+   * Go to categories
+   */
+  //TODO refactor to one single method and view?
   goToCountryCard() {
     this.navCtrl.push(Country, {
       channels: this.countryChannels
     });
   }
+
+  goToWorldCard() {
+    this.navCtrl.push(World, {
+      channels: this.worldChannels
+    });
+  }
+
+  goToSportCard() {
+    this.navCtrl.push(Sport, {
+      channels: this.sportChannels
+    });
+  }
+
+  goToBusinessCard() {
+    this.navCtrl.push(Business, {
+      channels: this.businessChannels
+    });
+  }
+
+  goToFunCard() {
+    this.navCtrl.push(Fun, {
+      channels: this.funChannels
+    });
+  }
+
 }

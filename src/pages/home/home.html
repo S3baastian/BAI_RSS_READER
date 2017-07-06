@@ -11,12 +11,33 @@
 
 <ion-content class="card-background-page" padding>
   <div *ngIf="finishedLoadingChanels">
-    <ion-list>
-      <button (click)="goToCountryCard()" ion-item>
-        <ion-icon name="locate" item-start></ion-icon>
-        Country
-      </button>
-    </ion-list>
+    <ion-card>
+      <ion-card-header>
+       Categories
+      </ion-card-header>
+      <ion-list>
+        <button (click)="goToCountryCard()" ion-item>
+          <ion-icon name="locate" item-start></ion-icon>
+          Country
+        </button>
+        <button (click)="goToWorldCard()" ion-item>
+          <ion-icon name="md-globe" item-start></ion-icon>
+          World
+        </button>
+        <button (click)="goToSportCard()" ion-item>
+          <ion-icon name="md-football" item-start></ion-icon>
+          Sport
+        </button>
+        <button (click)="goToBusinessCard()" ion-item>
+          <ion-icon name="md-cash" item-start></ion-icon>
+          Business
+        </button>
+        <button (click)="goToFunCard()" ion-item>
+          <ion-icon name="md-game-controller-b" item-start></ion-icon>
+          Fun
+        </button>
+      </ion-list>
+    </ion-card>
   </div>
   <div *ngIf="!finishedLoadingChanels" class="spinner">
     <ion-row>
