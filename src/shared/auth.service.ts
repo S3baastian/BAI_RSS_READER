@@ -40,7 +40,6 @@ export class AuthService {
     isAuthenticated() {
         const user = firebase.auth().currentUser;
         if (user) {
-            this.fetchUserChannelsSettings().subscribe((data) => this.userSettings = data.channels);
             return true;
         } else {
             return false;
