@@ -27,7 +27,6 @@ export class HomePage {
   }
 
   ionViewWillEnter() {
-
     this.finishedLoadingChanels = false;
     this.clearArrays();
     this.getUserSettings();

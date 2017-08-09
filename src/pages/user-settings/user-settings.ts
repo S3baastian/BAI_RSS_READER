@@ -15,6 +15,7 @@ export class UserSettings implements OnInit{
   ngOnInit() : any {
     this.channels = this.authService.getUserSettings();
   }
+  // TODO rename
   consoleChannels(categoryIndex, channelIndex, event) {
     const selection = event.checked;
     this.authService.updateUserSetting(categoryIndex, channelIndex, selection).subscribe();

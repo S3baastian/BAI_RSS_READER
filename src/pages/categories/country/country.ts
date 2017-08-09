@@ -9,7 +9,7 @@ import { ChannelsService } from "../../../shared/channels.service";
 export class Country implements OnInit {
   private channels: any;
   private news: any[] = [];
-  private finishedLoadingNews : boolean = false;
+  private finishedLoadingNews : boolean = false; // TODO message if havent news
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private channelsService: ChannelsService) {
