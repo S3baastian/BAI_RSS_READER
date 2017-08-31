@@ -29,7 +29,6 @@ Do każdej kategorii możliwe jest przypisanie portali informacyjnych. Dla kateg
 
 Dostępna jest również zakładka z ustawieniami, co pozwala na edycję preferencji dotyczących portali w dowolnym momencie użytkowania.
 
-## UŻYTE PLUGINY PHONEGAPA:
-Do stworzenia aplikacji użyto następujących wtyczek:
-https://github.com/apache/cordova-plugin-network-information.git
-https://github.com/apache/cordova-plugin-device-motion.git
+## AUTORZY PROJEKTU
+Natalia Lewczuk
+Sebastian Kuśnierz
