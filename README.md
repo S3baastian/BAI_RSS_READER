@@ -1,10 +1,10 @@
 # RSS Reader
-Aplikacja pozwalająca na czytanie wiadomości z kilku źródłem w jednym miejscu. 
+Aplikacja pozwalająca na czytanie wiadomości z kilku źródłem w jednym miejscu. Użytkownik ma możwliwość wyboru wiadomości z pięciu kategorii: Z kraju, ze świata, sport, biznes i rozrywka. Dla każdej kategorii przypisanych niest kilka źródeł, z których pobierane są wiadomości i to użytkownik może określić, które portale go interesują i tylko z nich będą pobierane informacje.
 
 ## Uruchomienie aplikacji:
 
-Aby uruchomić aplikację należy skompilować program przy użyciu rozwiązania dostarczonego przez Adobe:
-https://build.phonegap.com
+Aby uruchomić aplikację należy skompilować program przy użyciu odpowiedniego środowiska np.: Android Studio, node.js, Ionic.
+
 
 
 ## Opis działania programu:
