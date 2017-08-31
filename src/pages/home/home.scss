@@ -1,8 +1,7 @@
-.spinner > *
-{
-     display: flex!important;
-     align-content: center!important;
-     align-items: center!important;
+.spinner > * {
+  display: flex !important;
+  align-content: center !important;
+  align-items: center !important;
 }
 
 ion-spinner * {
@@ -11,4 +10,9 @@ ion-spinner * {
   stroke: #444;
   fill: #222;
   position: relative
+}
+
+.card-header {
+  background: rgb(72, 138, 255);
+  color: #fff;
 }

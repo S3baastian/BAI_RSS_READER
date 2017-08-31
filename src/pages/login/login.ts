@@ -19,19 +19,12 @@ export class LoginPage {
 
   redirectIfIsAuthenticated() {
     if(this.authService.isAuthenticated()) {
-      //TODO fetch user settings here, and then setRoot to tabspage
       this.navController.setRoot(TabsPage);
     }
   }
 
   onRegister() {
-    //TODO handle register validation
-    if(this.authService.signupUser(this.myForm.value)) {
-      this.authService.createDefaultSettingsForRegisteredUser().subscribe();
-    }
-    if(this.authService.isAuthenticated()) {
-      this.navController.setRoot(TabsPage);
-    }
+    this.authService.signupUser(this.myForm.value)
   }
 
   onLogin() {
