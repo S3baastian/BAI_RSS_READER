@@ -25,7 +25,7 @@ Wiadomości podzielone na kategorię:
 Do każdej kategorii możliwe jest przypisanie portali informacyjnych. Dla kategorii z kraju można wybrać np. wp.pl oraz onet.pl. 
 
 
-![](http://sklep213251.shoparena.pl/upload/projekt/5.png)
+![](http://sklep213251.shoparena.pl/upload/projekt/6.png)
 
 Dostępna jest również zakładka z ustawieniami, co pozwala na edycję preferencji dotyczących portali w dowolnym momencie użytkowania.
 
